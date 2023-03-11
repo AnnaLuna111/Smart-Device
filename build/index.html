@@ -9,8 +9,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/16.png">
     <link rel="preload" href="fonts/RobotoCondensed-bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/PTMono.woff2" as="font" type="font/woff2" crossorigin>
     <title>Smart Device</title>
@@ -321,11 +320,11 @@
           </button>
           <div class="modal__form form" data-form-validate data-callback="base">
             <h2>Закажите звонок</h2>
-            <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+            <p>Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время</p>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <div data-validate-type="text" data-limitation="letters" data-required data-message-base="Поле обязательно к заполнению">
+              <div data-validate-type="text" data-limitation="letters" data-required data-message-base="Поле обязательно к заполнению" data-focus>
                 <label>
-                  <input type="text" name="name" id="your-name" placeholder="Имя" minlength="2" required data-focus>
+                  <input type="text" name="name" id="your-name" placeholder="Имя" minlength="2" required>
                 </label>
               </div>
               <div data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
@@ -339,11 +338,11 @@
                 </label>
               </div>
               <button class="modal__button form__button button" type="submit">Отправить</button>
-              <div class="form__checkbox" data-validate-type="checkbox" data-required data-message-base="Поле обязательно к заполнению">
+              <div class="modal__checkbox form__checkbox" data-validate-type="checkbox" data-required data-message-base="Поле обязательно к заполнению">
                 <label>
                   <input type="checkbox" name="checkbox" value="agree" required checked>
                   <span class="form__checkbox-text">
-                    Я&nbsp;согласен на&nbsp;обработку персональных данных
+                    Я&nbsp;согласен на&nbsp;обработку&nbsp;&nbsp;персональных данных
                   </span>
                 </label>
               </div>
