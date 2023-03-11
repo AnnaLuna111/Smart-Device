@@ -1,0 +1,29 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 11px 16px;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: inherit;
+
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

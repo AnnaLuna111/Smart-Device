@@ -15,8 +15,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
+  line-height: 22px;
+  font-family: $ff-mono;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -25,6 +25,11 @@ html {
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 body {
@@ -34,8 +39,9 @@ body {
   background-color: $color-default-white;
 }
 
+
 a {
-  color: $color-default-black;
+  color: $color-alice-blue;
   text-decoration: none;
 }
 
@@ -65,7 +71,7 @@ input:-webkit-autofill {
 // firefox placeholder \ invalid fix + ios bdrs
 input,
 textarea {
-  border-radius: 0;
+  border-radius: 3px;
 
   &::placeholder {
     opacity: 1;
@@ -126,4 +132,5 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  cursor: pointer;
 }

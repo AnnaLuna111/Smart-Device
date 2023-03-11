@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   position: relative;
 
@@ -44,7 +48,6 @@
 
 .scroll-lock-ios {
   position: fixed;
-
   overflow: hidden;
 }
 
@@ -68,4 +71,63 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.input-message {
+  padding-left: 4px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hidden-tablet {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.hidden-desktop {
+  @include vp-1024 {
+    display: none;
+  }
+}
+
+.hidden-mobile {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hidden-not-mobile {
+  @include vp-768 {
+    display: none;
+  }
+}
+
+[data-hide]:not(.is-open) div {
+  display: none;
+}
+
+
+@include vp-767 {
+  [data-accordion-item] {
+    position: relative;
+  }
+
+  [data-accordion-item].is-open {
+    [data-accordion-button]::after {
+      display: none;
+    }
+  }
+
+  [data-accordion-item]:not(.is-open) {
+    [data-accordion-content] {
+      display: none;
+    }
+  }
 }

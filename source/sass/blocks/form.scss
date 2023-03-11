@@ -1,0 +1,166 @@
+.form {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 35px;
+
+    @include vp-1023 {
+      margin-bottom: 25px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 34px;
+    }
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    color: $color-default-white;
+    background-color: $color-black-pearl-transparent;
+    border: 1px solid transparent;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+
+    &:hover {
+      border-color: $color-default-white;
+    }
+
+    &:focus {
+      color: $color-default-white;
+      background-color: $color-sky-blue;
+      border-color: $color-default-white;
+      outline: none;
+    }
+
+    @include vp-767 {
+      font-size: $fz-default;
+      line-height: 22px;
+    }
+  }
+
+  input {
+    padding: 15px;
+    width: 100%;
+
+    @include vp-767 {
+      padding: 13px 15px;
+    }
+  }
+
+  input[type="checkbox"] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    appearance: none;
+    max-width: 30px;
+    max-height: 30px;
+
+    &::before {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 1px solid $color-default-white;
+      border-radius: 2px;
+      content: "";
+    }
+
+    &:hover::before,
+    &:focus::before {
+      border-color: $color-black-pearl;
+    }
+
+    &:checked::after {
+      position: absolute;
+      top: 12px;
+      content: "";
+      min-width: 7px;
+      height: 4px;
+      border: 1px solid $color-default-white;
+      border-right: none;
+      border-top: none;
+      transform: rotate(-45deg);
+    }
+  }
+
+  textarea {
+    padding: 23px 15px;
+    width: 100%;
+    min-height: 155px;
+    margin-bottom: 11px;
+
+    @include vp-1023 {
+      padding: 30px 15px 15px;
+      margin-bottom: 13px;
+    }
+
+    @include vp-767 {
+      padding: 22px 15px 15px;
+      margin-bottom: 9px;
+      min-height: 180px;
+    }
+  }
+
+  &__textarea {
+    grid-column: 1 / -1;
+  }
+
+  &__button {
+    width: 265px;
+    padding: 12px 25px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: $color-default-black;
+    border-color: $color-default-black;
+
+    &:active {
+      color: $color-default-black;
+      background-color: $color-default-white;
+      border-color: $color-default-white;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      margin-bottom: 3px;
+    }
+  }
+
+  &__checkbox {
+    align-self: end;
+
+    & > label {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-transparent;
+    }
+
+    @include vp-1023 {
+      align-self: center;
+      margin-left: -7px;
+    }
+
+    @include vp-767 {
+      margin-left: 0;
+    }
+  }
+}

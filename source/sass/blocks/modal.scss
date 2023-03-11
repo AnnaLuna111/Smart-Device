@@ -62,7 +62,8 @@
     width: 600px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    color: $color-default-white;
+    background-color: $color-sky-blue;
 
     @include vp-767 {
       width: 100%;
@@ -80,7 +81,7 @@
     height: 40px;
     padding: 0;
 
-    background: $color-transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
   }
@@ -101,19 +102,37 @@
     }
   }
 
-  &--no-scale {
-    transform: none;
-  }
-
-  &--preload {
-    transition: none;
-  }
-
   &.is-active {
     transform: scale(1);
     visibility: visible;
     opacity: 1;
 
     pointer-events: auto;
+  }
+
+  &__form {
+    h2 {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 20px;
+    }
+  }
+
+  &__textarea {
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    width: 100%;
   }
 }
