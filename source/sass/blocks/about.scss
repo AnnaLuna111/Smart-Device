@@ -19,10 +19,10 @@
   }
 
   &__date {
-    background: $color-default-white url("img/company-date.png") no-repeat top / 150px 320px;
+    background: $color-default-white url("./../img/company-date.png") no-repeat top / 150px 320px;
 
     @include retina {
-      background-image: url("/../img/company-date@2x.png");
+      background-image: url("./../img/company-date@2x.png");
     }
   }
 

@@ -1,8 +1,8 @@
 .homescreen {
-  background: $color-default-black url("/../img/homescreen-desktop@1x.jpg") no-repeat center / cover;
+  background: $color-default-black url("./../img/homescreen-desktop@1x.jpg") no-repeat center / cover;
 
   @include retina {
-    background-image: url("/../img/homescreen-desktop@2x.jpg");
+    background-image: url("./../img/homescreen-desktop@2x.jpg");
   }
 
   &__container {
