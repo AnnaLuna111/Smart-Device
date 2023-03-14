@@ -320,11 +320,11 @@
           </button>
           <div class="modal__form form" data-form-validate data-callback="base">
             <h2>Закажите звонок</h2>
-            <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+            <p>Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время</p>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <div data-validate-type="text" data-limitation="letters" data-required data-message-base="Поле обязательно к заполнению" data-focus>
+              <div data-validate-type="text" data-limitation="letters" data-required data-message-base="Поле обязательно к заполнению">
                 <label>
-                  <input type="text" name="name" id="your-name" placeholder="Имя" minlength="2" required>
+                  <input type="text" name="name" id="your-name" placeholder="Имя" data-focus required>
                 </label>
               </div>
               <div data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
@@ -332,17 +332,17 @@
                   <input type="tel" name="phone" id="your-phone" placeholder="Телефон" required>
                 </label>
               </div>
-              <div class="modal__textarea form__textarea">
+              <div class="form__textarea">
                 <label>
                   <textarea name="question" id="your-question" cols="50" rows="10" placeholder="Ваш вопрос"></textarea>
                 </label>
               </div>
               <button class="modal__button form__button button" type="submit">Отправить</button>
-              <div class="form__checkbox" data-validate-type="checkbox" data-required data-message-base="Поле обязательно к заполнению">
+              <div class="modal__checkbox form__checkbox" data-validate-type="checkbox" data-required data-message-base="Поле обязательно к заполнению">
                 <label>
                   <input type="checkbox" name="checkbox" value="agree" required checked>
                   <span class="form__checkbox-text">
-                    Я&nbsp;согласен на&nbsp;обработку персональных данных
+                    Я&nbsp;согласен на&nbsp;обработку&nbsp;&nbsp;персональных данных
                   </span>
                 </label>
               </div>
