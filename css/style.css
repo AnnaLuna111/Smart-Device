@@ -763,7 +763,7 @@ html {
 }
 
 .homescreen {
-  background: #041827 url("/../img/homescreen-desktop@1x.jpg") no-repeat center/cover;
+  background: #041827 url("./../img/homescreen-desktop@1x.jpg") no-repeat center/cover;
 }
 
 .homescreen__container {
@@ -863,7 +863,7 @@ html {
 }
 
 .about__date {
-  background: #ffffff url("img/company-date.png") no-repeat top/150px 320px;
+  background: #ffffff url("./../img/company-date.png") no-repeat top/150px 320px;
 }
 
 .about h2 {
@@ -2577,11 +2577,11 @@ html {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .homescreen {
-    background-image: url("/../img/homescreen-desktop@2x.jpg");
+    background-image: url("./../img/homescreen-desktop@2x.jpg");
   }
 
   .about__date {
-    background-image: url("/../img/company-date@2x.png");
+    background-image: url("./../img/company-date@2x.png");
   }
 
   .feedback__image {
