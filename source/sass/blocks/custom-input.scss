@@ -99,6 +99,10 @@
     position: absolute;
     right: 0;
     bottom: -5px;
+    
+    padding-left: 4px;
+    font-size: 10px;
+    line-height: 1;
 
     &.is-invalid {
       color: #ff0000;

@@ -633,12 +633,6 @@ html {
   outline: none;
 }
 
-.input-message {
-  padding-left: 4px;
-  font-size: 10px;
-  line-height: 1;
-}
-
 .reset-list {
   margin: 0;
   padding: 0;
@@ -1517,6 +1511,9 @@ html {
   position: absolute;
   right: 0;
   bottom: -5px;
+  padding-left: 4px;
+  font-size: 10px;
+  line-height: 1;
 }
 
 .custom-input .input-message.is-invalid,
@@ -2430,11 +2427,13 @@ html {
 
   .footer__button {
     position: absolute;
-    top: 20px;
-    right: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 60px;
     background-color: transparent;
     border: none;
   }
@@ -2443,10 +2442,10 @@ html {
   .footer__button::after {
     position: absolute;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    right: 26px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 15px;
     height: 1px;
     background-color: #f2f5f7;
@@ -2454,6 +2453,7 @@ html {
   }
 
   .footer__button::after {
+    right: 33px;
     width: 1px;
     height: 15px;
   }
