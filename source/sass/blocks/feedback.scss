@@ -32,10 +32,10 @@
 
   &__image {
     max-width: 510px;
-    background: transparent url("/../img/feedback.png") no-repeat top 59% left 0 / contain;
+    background: transparent url("./../img/feedback.png") no-repeat top 59% left 0 / contain;
 
     @include retina {
-      background-image: url("/../img/feedback@2x.png");
+      background-image: url("./../img/feedback@2x.png");
     }
 
     @include vp-1023 {
