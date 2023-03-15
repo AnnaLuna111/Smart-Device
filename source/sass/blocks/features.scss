@@ -25,6 +25,10 @@
     &:hover {
       color: $color-alice-blue;
       background-color: $color-sky-blue;
+
+      p {
+        color: $color-alice-blue;
+      }
     }
 
     @include vp-1023 {
@@ -78,5 +82,6 @@
   p {
     margin: 0;
     margin-bottom: 10px;
+    color: $color-default-black;
   }
 }

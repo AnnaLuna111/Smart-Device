@@ -15,7 +15,7 @@
     color: $color-default-white;
 
     @include vp-1279 {
-      gap: 0;
+      gap: 10px;
     }
 
     @include vp-1023 {
@@ -45,10 +45,10 @@
   }
 
   &__form {
-    max-width: 585px;
+    min-width: 585px;
 
     @include vp-1023 {
-      max-width: 100%;
+      min-width: 100%;
     }
   }
 

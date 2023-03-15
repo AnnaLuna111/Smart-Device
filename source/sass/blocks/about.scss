@@ -64,6 +64,12 @@
     padding-bottom: 13px;
     color: $color-sky-blue;
 
+    &:hover,
+    &:focus {
+      color: $color-prussian-blue;
+      border-color: $color-prussian-blue;
+    }
+
     &:active {
       color: $color-default-white;
       background-color: $color-sky-blue;

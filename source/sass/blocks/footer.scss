@@ -10,8 +10,7 @@
 
 
     @include vp-1279 {
-      grid-template-columns: 1fr 470px 1fr;
-      gap: 10px;
+      grid-template-columns: 280px 1fr 345px;
     }
 
     @include vp-1023 {
@@ -35,7 +34,12 @@
   &__socials {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
+
+    img {
+      min-width: 215px;
+    }
 
     @include vp-1023 {
       grid-column: 1/-1;
@@ -47,7 +51,6 @@
       flex-direction: column;
       gap: 10px;
       align-items: center;
-      // margin-left: -8px;
     }
   }
 
@@ -56,7 +59,7 @@
     flex-direction: column;
     gap: 20px;
     padding-top: 7px;
-    overflow: hidden;
+    width: 100%;
 
     @include vp-1023 {
       padding-top: 0;
@@ -112,16 +115,23 @@
     }
   }
 
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+
+    @include vp-1023 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
   &__group-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px 30px;
-    height: 150px;
-    max-width: 470px;
+    gap: 10px;
 
     @include vp-1023 {
-      max-height: 100%;
       gap: 8px;
     }
 
