@@ -4,7 +4,12 @@
   color: $color-alice-blue;
   z-index: 2;
 
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   @include vp-1023 {
+    position: static;
     padding: 20px 0 25px;
   }
 
